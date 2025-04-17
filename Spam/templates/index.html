@@ -18,10 +18,10 @@
         <header>
             <nav>
                 <div><a href="#" class="brand">SPD</a></div>
-                <ul>
+                <!-- <ul>
                     <li><a href="#" class="active">Web App</a></li>
                     <li><a href="#">Web Api</a></li>
-                </ul>
+                </ul> -->
             </nav>
         </header>
         <!-- Header part end -->
@@ -58,19 +58,19 @@
                     <form method="post" action="check" class="main-form">
                         {% csrf_token %}
                         <textarea name="rawdata" placeholder="Enter Your Text Here..." id="rawdata"></textarea><br>
-                        <div class="algo-choice">
+                        <div class="algo-choice" style="display: none;">
                             <label class="radiocontainer">Algo - 1
                                 <input type="radio" name="algo" value="Algo-1">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="radiocontainer">Algo - 2
+                            <!-- <label class="radiocontainer">Algo - 2
                                 <input type="radio" name="algo" value="Algo-2">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="radiocontainer">Algo - 3
                                 <input type="radio" name="algo" value="Algo-3">
                                 <span class="checkmark"></span>
-                            </label>
+                            </label> -->
                         </div>
                         <div class="check-holder">
                             <button type="submit" class="check-btn">Check</button>
